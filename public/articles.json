@@ -1,0 +1,66 @@
+{
+  "hoge": {
+    "title": "同じ名前のファイルがあったらどうなるのか",
+    "date": "2013-10-16 04:38",
+    "categories": [
+      "test",
+      "テスト"
+    ],
+    "tags": [
+      "てすと"
+    ],
+    "preview": "同じ名前のファイルがあると一個しか表示されない",
+    "iso8601Date": "2013-10-16T04:38:00+09:00",
+    "basename": "hoge"
+  },
+  "new": {
+    "title": "あたらしめの記事",
+    "date": "2013-10-16 03:20",
+    "categories": [
+      "test"
+    ],
+    "preview": "日時順にソートできるのかどうかで使い勝手が変わりそう",
+    "iso8601Date": "2013-10-16T03:20:00+09:00",
+    "basename": "new"
+  },
+  "test": {
+    "title": "てすと",
+    "date": "2013-10-16 03:00",
+    "categories": [
+      "test"
+    ],
+    "tags": [
+      "markdown",
+      "grunt.js",
+      "javascript"
+    ],
+    "preview": "Grunt.jsでmarkdownをつかったjekllyみたいな簡易CMSを作ってみている。\n…",
+    "iso8601Date": "2013-10-16T03:00:00+09:00",
+    "basename": "test"
+  },
+  "test2": {
+    "title": "てすとだよ",
+    "categories": [
+      "test"
+    ],
+    "tags": [
+      "markdown",
+      "grunt.js",
+      "javascript"
+    ],
+    "date": "2013-10-16 04:04",
+    "preview": "# てすとの巻\n\nほげほげふがふが。ふむふむ。なるほど〜",
+    "iso8601Date": "2013-10-16T04:04:00+09:00",
+    "basename": "test2"
+  },
+  "x": {
+    "title": "x",
+    "date": "2013-10-16 03:25",
+    "categories": [
+      "test"
+    ],
+    "preview": "なんとなくアルファベット順な気がする、、",
+    "iso8601Date": "2013-10-16T03:25:00+09:00",
+    "basename": "x"
+  }
+}
