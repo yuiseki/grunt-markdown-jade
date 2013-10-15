@@ -1,0 +1,18 @@
+extends layouts/base.jade
+
+block append link
+    link(rel="stylesheet", type="text/css", href="css/main.css")
+block append script
+    script(type="text/javascript", src="js/main.js")
+block style
+    style.
+        div.doc {
+            font-size: 16px;
+            margin: 5%;
+        }
+        div.doc hr:nth-child(1), div.doc p:nth-child(2), div.doc hr:nth-child(3) {
+            display: none;
+        }
+block body
+    div.doc
+        {DOC}

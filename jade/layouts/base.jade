@@ -1,0 +1,29 @@
+!!! 5
+html
+    head
+        meta(charset="utf-8")
+        block link
+            link(rel="stylesheet", type="text/css", href="css/layout.css")
+            link(rel="stylesheet", type="text/css", href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+        block script
+            script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+            script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js")
+            script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js")
+        block title
+            title #{title}
+        block style
+
+    body
+        block header
+            div.navbar.navbar-default.navbar-static-top.navbar-inverse(role="navigation")
+                div.navbar-header
+                    a.navbar-brand(href="#") My Site
+                div.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href="/") Home
+                        li
+                            a(href="/") Link
+        block body
+        block footer
+            script(type="text/javascript", src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")

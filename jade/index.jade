@@ -1,0 +1,63 @@
+extends layouts/base.jade
+
+block append script
+    script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/tablesort/1.6.1/tablesort.js")
+block style
+    style.
+        body {
+            font-size: 16px;
+            margin: 0;
+        }
+        th.sort-header {
+          cursor:pointer;
+        }
+        th.sort-header::-moz-selection,
+        th.sort-header::selection {
+          background:transparent;
+        }
+        table th.sort-header:after {
+          content:'';
+          float:right;
+          margin-top:7px;
+          border-width:0 4px 4px;
+          border-style:solid;
+          border-color:#404040 transparent;
+          visibility:hidden;
+        }
+        table th.sort-header:hover:after {
+          visibility:visible;
+        }
+        table th.sort-up:after,
+        table th.sort-down:after,
+        table th.sort-down:hover:after {
+          visibility:visible;
+          opacity:0.4;
+        }
+        table th.sort-up:after {
+          border-bottom:none;
+          border-width:4px 4px 0;
+        }
+    script.
+        $(function(){
+            var table = document.getElementById('articles-table')
+            var sort = new Tablesort(table);
+            $('#date-header').click().click()
+        });
+block body
+    div.container
+        table#articles-table.table.table-striped.table-borderd
+            thead
+                tr
+                    th Title
+                    th#date-header Date
+                    th Categories
+                    th Tags
+            tbody
+                each article in data
+                    tr
+                        td
+                            a(href="articles/#{article.basename}.html")
+                                = article.title
+                        td= article.date
+                        td= article.categories
+                        td= article.tags
