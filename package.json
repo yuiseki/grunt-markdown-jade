@@ -1,0 +1,21 @@
+{
+  "name": "none",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-markdown-to-json": "~0.4.2",
+    "grunt-md2html": "~0.1.4"
+  }
+}
